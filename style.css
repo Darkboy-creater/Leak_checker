@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #0a2f1f, #051a0e);
+    font-family: 'Courier New', 'Fira Code', 'Monaco', monospace;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: #0b3b2a;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0,255,0,0.25), inset 0 0 15px rgba(0,255,0,0.05);
+    width: 750px;
+    max-width: 100%;
+    padding: 30px;
+    border: 1px solid #2ecc71;
+}
+
+.header h1 {
+    color: #2ecc71;
+    text-align: center;
+    font-size: 28px;
+    text-shadow: 0 0 10px #2ecc71;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #27ae60;
+    text-align: center;
+    font-size: 11px;
+    margin-bottom: 25px;
+}
+
+.card h2 {
+    color: #2ecc71;
+    margin-bottom: 20px;
+    border-left: 4px solid #2ecc71;
+    padding-left: 12px;
+    font-size: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 14px 18px;
+    background: #0a2a1e;
+    border: 2px solid #2ecc71;
+    color: #2ecc71;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-bottom: 18px;
+    font-family: monospace;
+    transition: all 0.3s;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 15px #2ecc71;
+    border-color: #27ae60;
+}
+
+button {
+    background: #1e5631;
+    color: #2ecc71;
+    border: 1px solid #2ecc71;
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2ecc71;
+    color: #0a2f1f;
+    box-shadow: 0 0 12px #2ecc71;
+    transform: scale(1.02);
+}
+
+#resultArea {
+    margin-top: 25px;
+    background: #0a2a1e;
+    padding: 20px;
+    border-radius: 15px;
+    min-height: 200px;
+    border: 1px solid #1e5631;
+    overflow-x: auto;
+}
+
+#resultMessage {
+    line-height: 1.6;
+    font-size: 13px;
+}
+
+.initial-state {
+    color: #27ae60;
+    text-align: center;
+    padding: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+#printBtn, #clearBtn {
+    flex: 1;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 10px;
+    color: #1e5631;
+    border-top: 1px solid #1e5631;
+    padding-top: 15px;
+}
+
+/* Loading Animation */
+.loading-hidden {
+    display: none;
+}
+
+.loading-show {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    background: #0a2a1e;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #1e5631;
+    border-top: 3px solid #2ecc71;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Breach Display Styling */
+.breach-header {
+    color: #e74c3c;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e74c3c;
+    padding-bottom: 8px;
+}
+
+.breach-card {
+    background: #0d2f22;
+    border-left: 3px solid #e74c3c;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+.breach-name {
+    color: #f39c12;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.breach-detail {
+    color: #7f8c8d;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.breach-data-classes {
+    color: #2ecc71;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.no-breach {
+    color: #2ecc71;
+    text-align: center;
+    padding: 20px;
+}
+
+.error-text {
+    color: #e67e22;
+    text-align: center;
+    padding: 20px;
+}
+
+hr {
+    border-color: #1e5631;
+    margin: 15px 0;
+}

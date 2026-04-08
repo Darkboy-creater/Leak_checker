@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔍 TDO Advance Leak Check Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔐 TDO ADVANCE OSINT</h1>
+            <p>Real-time Data Breach Intelligence | XposedOrNot API</p>
+        </div>
+        
+        <div class="card">
+            <h2>📡 Leak Check Tool</h2>
+            <input type="email" id="emailInput" placeholder="Enter email address to check" autocomplete="off">
+            <button onclick="checkLeak()">🔍 Scan Breaches</button>
+            
+            <div id="loading" class="loading-hidden">
+                <div class="spinner"></div>
+                <p>Searching 13B+ breached records...</p>
+            </div>
+            
+            <div id="resultArea">
+                <div id="resultMessage" class="initial-state">
+                    ⚡ Enter an email address to check for data breaches
+                </div>
+            </div>
+            
+            <div class="buttons">
+                <button onclick="printReport()" id="printBtn">🖨️ Export Report</button>
+                <button onclick="clearSearch()" id="clearBtn">🗑️ Clear</button>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>🔒 Data source: XposedOrNot | Checks real breaches including recent Instagram 17.5M leak</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
